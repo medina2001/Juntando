@@ -10,3 +10,5 @@ Desenvolvido por:
   Marina Cristina
   Ryan Albuquerque
   Wesley Hipólito
+
+Leia a documentação e o guia de instalação.
