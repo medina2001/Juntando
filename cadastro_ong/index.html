@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <title>Human Donation: Conectando pessoas e tranformando vidas</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../global/css/reset.css">
+  <link rel="stylesheet" href="./style/index.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="shortcut icon" href="../global/src/logo-mini.jpeg">
+
+
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="left">
+      <a href="../homepage/index.html"><img src="../global/src/logo_leftside.jpg" width="40%"></a>
+    </div>
+    <div class="right">
+      <nav>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn" style="background-color:#2AB7E8;
+            border: none; width: 70px;"><i class="fa fa-bars" style="width: 5px ;color: white;"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="../insttuicoes/index.html">Instituições</a>
+            <a href="../sobre_nos/index.html">Sobre nós</a>
+            <a href="../contato/index.html">index</a>
+            <a href="../login/index.html">index</a>
+          </div>
+        </div>
+        <a href="../instituicoes/index.html">Instituições</a>
+        <a href="../sobre_nos/index.html">Sobre nós</a>
+        <a href="../contato/index.html">Contato</a>
+        <a href="../login/index.html">Login</a>
+
+      </nav>
+
+
+    </div>
+  </header>
+
+  <main>
+    <div class="rodape">
+      <img src="./src/organization.png" width="10%">
+      <h3>Todos juntos por só causa. Cadastre-se! </h3>
+    </div>
+    <script>
+      function formatar(mascara, documento) {
+        var i = documento.value.length;
+        var saida = mascara.substring(0, 1);
+        var texto = mascara.substring(i)
+
+        if (texto.substring(0, 1) != saida) {
+          documento.value += texto.substring(0, 1);
+        }
+
+      }
+    </script>
+
+    <form class="form">
+      <label for="fname">Nome da Instituição</label>
+      <input class="a" type="text" id="fname" name="firstname" placeholder="Nome da Instituições:">
+      <label>CNPJ</label>
+      <input class="number1" type="text" maxlength="18" OnKeyPress="formatar('00.000.000/0000-00', this)"
+        placeholder="CNPJ">
+
+      <label>Causa Social</label>
+      <input class="causa" type="text" placeholder="Causa social que contribui">
+      <label>Email</label>
+      <input class="a" type="email" placeholder="Digite seu email">
+      <label>Telefone</label>
+      <input class="number2" type="text" maxlength="13" OnKeyPress="formatar('00-0000-000', this)"
+        placeholder="Número para contato">
+    </form>
+
+    <div class="criar">
+      <a id="#criar" href="">Criar Conta</a>
+    </div>
+
+  </main>
+
+</body>
+<script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+</script>
+
+</html>

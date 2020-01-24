@@ -1,0 +1,96 @@
+.bg-modal{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    width: 550px;
+    height: 350px;
+    background-color: #FFF8F8;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-content p{
+    font-size: large;
+    width: 80%;
+    display: block;
+    margin: 15px auto;
+}
+
+.modal-content img{
+    width: 90px;
+    height: 90px;
+}
+
+.modal-content input{
+    border: 0;
+    background: none;
+    background-color: rgb(230, 230, 230);
+    display: block;
+    margin: 20px auto;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px 6px;
+    font-size: large;
+    color: #212121;
+    width: 475px;
+    outline: none;
+}
+
+.email{
+    position: relative;
+    left: 6%;
+    border-radius: 6px;
+    width: 475px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+}
+
+.email button{
+    position: relative;
+    top: -61px;
+    float: right;
+    outline: none;
+    display: block;
+    text-align: center;
+    background-color: #12C943;
+    color: white;
+    width: 120px;
+    height: 41px;
+    border: 0px;
+    border-radius: 6px;
+    opacity: 1;
+    transition: 0.75s;
+}
+
+.email button:hover{
+    background-color: rgb(50, 255, 104);
+}
+
+.close{
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 10px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.close:hover{
+    transform: rotate(180deg);
+}
+
+.close:active{
+    color: dimgrey;
+}

@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <title>Human Donation: Conectando pessoas e tranformando vidas</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../global/css/reset.css">
+  <link rel="stylesheet" href="./style/index.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="shortcut icon" href="../global/src/logo-mini.jpeg">
+
+</head>
+
+<body>
+  <header>
+    <div class="left">
+      <a href="../homepage/index.html"><img src="../global/src/logo_leftside.jpg" width="40%"></a>
+
+    </div>
+
+    <div class="right">
+      <nav>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn" style="background-color:#2AB7E8;
+            border: none; width: 70px;"><i class="fa fa-bars" style="width: 5px ;color: white;"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="../instituicoes/index.html">Instituições</a>
+            <a href="../sobre_nos/index.html">Sobre nós</a>
+            <a href="./index.html">Contato</a>
+            <a href="../login/index.html">Login</a>
+          </div>
+        </div>
+        <a href="../instituicoes/index.html">Instituições</a>
+        <a href="../sobre_nos/index.html">Sobre nós</a>
+        <a href="./index.html">Contato</a>
+        <a href="../login/index.html">Login</a>
+
+      </nav>
+
+
+    </div>
+  </header>
+
+  <main>
+    <div class="cor">
+      <div class="cont">
+        <div class="sub1">
+          <h1>Contate-nos</h1>
+
+          <input type="text" placeholder="Digite seu nome:">
+          <input type="email" placeholder="Digite seu email:">
+          <input type="text" placeholder="Digite o assunto:">
+          <textarea type="text" placeholder="Digite seu texto:"></textarea>
+
+          <a href="" onclick="alerta1()">Enviar</a>
+
+
+        </div>
+        <div class="sub2">
+          <h1>Siga-nos</h1>
+          <a href="https://www.instagram.com/humandonation"><img src="./src/Instagram - Logo.png"></a>
+          <a href="https://www.facebook.com/"><img src="./src/Facebook - icone.png"></a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</body>
+
+<script>
+  function alerta1() {
+    alert("Agradecemos seu contato, estaremos entrando em contato via email em breve! Human Donation");
+  }
+  /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+
+</html>

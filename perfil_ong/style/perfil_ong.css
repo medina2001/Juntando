@@ -1,0 +1,179 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 8px 16px 8px 16px;
+    background-color: #2AB7E8;
+    
+    overflow: hidden;
+    
+}
+.left, .right{
+    margin:0px 7px 0px 7px;
+}
+
+.right a{
+    margin: 0px 7px 0px 7px;
+    padding: 3px;
+
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    
+}
+
+.right a:hover{
+    transition: 0.3s;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    
+}
+.dropbtn {
+
+    color: white;
+    padding:15%;
+    font-size: 16px;
+    
+
+  }
+  
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top:1%
+  }
+  
+  .dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: #f1f1f1;
+    min-width: 425px;
+    right: 0;
+    text-align: center;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .show{display: block;}
+
+
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .c1{
+    text-align: right;
+    margin: 4%;
+    margin-bottom: 0;
+
+  }
+  .c1 a{
+    font-size: medium ;
+    margin-bottom: 0;
+    color: black;
+    text-decoration: none;
+    border: 1px solid #31C95A;
+    padding:1%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px black;
+    transition: 0.3s;
+  }
+
+  .c1 a:hover{
+    color: white;
+    padding:1.1%;
+    background-color: #31C95A;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .c2{
+   text-align:center;
+  }
+  .c2 h3{
+    margin: 1%;
+  }
+
+  .doacao{
+    align-self: center;
+
+    margin: 2%;
+    
+  }
+
+  .doacao img{
+    width:15%;
+    margin-right:1%;
+    vertical-align: middle;
+  }
+
+  .doacao img.arrow{
+    width: 6%;
+  }
+
+  .voluntarios{
+    margin-top: 3%;
+    align-self: center;
+  padding-right: 15%;
+  text-align: justify;
+
+
+  }
+
+  .voluntarios img{
+    
+    margin:2%;
+    width: 15%;
+    margin-right: 3%;
+    
+    margin-right:1%;
+    vertical-align: middle;
+  }
+
+  .voluntarios img.arrow{
+    width: 6%;
+  }
+
+  .boxes{
+    padding-right: 15%;
+
+    margin-top: 3%;
+    align-self: center;
+
+    margin-bottom: 5%;
+
+
+  }
+
+  .boxes img{
+    margin: 2%;
+    width: 15%;
+    margin-right: 2%;
+    vertical-align: middle;
+  }
+
+  .boxes img.arrow{
+    width: 6%;
+  }
+  
+  @media  screen and (max-width:720px){
+    .dropdown{
+        display: inline-block;
+    }
+
+    nav a{
+        display: none;
+        font-size: small;
+    }
+}

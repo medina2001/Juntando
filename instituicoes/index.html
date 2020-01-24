@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <title>Human Donation: Conectando pessoas e tranformando vidas</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../global/css/reset.css">
+  <link rel="stylesheet" href="./style/index.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="shortcut icon" href="../global/src/logo-mini.jpeg">
+
+</head>
+
+<body>
+  <header>
+    <div class="left">
+      <a href="../homepage/index.html"><img src="../global/src/logo_leftside.jpg" width="40%"></a>
+
+    </div>
+
+    <div class="right">
+      <nav>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn" style="background-color:#2AB7E8;
+            border: none; width: 50px;"><i class="fa fa-bars" style="width: 5px ;color: white; "></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="./index.html">Instituições</a>
+            <a href="../sobre_nos/index.html">Sobre nós</a>
+            <a href="../contato/index.html">Contato</a>
+            <a href="../login/index.html">Login</a>
+          </div>
+        </div>
+        <a href="./index.html">Instituições</a>
+        <a href="../sobre_nos/index.html">Sobre nós</a>
+        <a href="../contato/index.html">Contato</a>
+        <a href="../login/index.html">Login</a>
+
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <div class="header">
+      <h2>Instituições</h2>
+
+      <a href="../login/login.html"
+        style="align-self: flex-end; margin-right: 2.5%; text-decoration: none; padding: 1% 2% 1% 2%;border-radius:20px; box-shadow:2px 2px 4px black; color: white; background-color: #31C95A; ">Quero
+        doar</a>
+
+      <h4>Encontre aqui Instituições cadastradas e faça sua doação.</h4>
+
+    </div>
+
+
+    <div class="conteudo">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(function () {
+          $('.img-thumbnail').on('click', function () {
+            var $imgSelected = $(this).attr("data-selected")
+
+            $('.img-thumbnail').removeClass('ativo');
+            $(this).addClass('ativo');
+          }
+          )
+        });
+      </script>
+      <style>
+        .img-thumbnail {
+          position: relative;
+          cursor: pointer;
+        }
+
+        .ativo:before {
+          border-radius: 15px;
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          border: 4px solid gold;
+          box-shadow: 2px 2px 4px black;
+
+        }
+      </style>
+
+      <div class="h1">
+
+        <div class="causa1 img-thumbnail ativo" data-selected="causa1">
+          <img src="./src/Ambiental.png">
+          <h3>Ambiental</h3>
+        </div>
+
+        <div class="causa2 img-thumbnail" data-selected="causa2">
+          <img src="./src/Ass. Social.png" style="width: 80%;">
+          <h3>Ass. Social</h3>
+        </div>
+
+        <div class="causa3 img-thumbnail" data-selected="causa3">
+          <img src="./src/Crianças.png">
+          <h3>Crianças</h3>
+        </div>
+
+        <div class="causa6 img-thumbnail" data-selected="causa6">
+          <img src="./src/Idoso.png" width="90%;">
+          <h3>Idoso</h3>
+        </div>
+
+      </div>
+
+      <div class="h2">
+
+        <div class="causa4 img-thumbnail" data-selected="causa4">
+          <img src="./src/Animais.png">
+          <h3>Animais</h3>
+        </div>
+
+        <div class="causa5 img-thumbnail" data-selected="causa5">
+          <img src="./src/Imigrante.png">
+          <h3>Imigrantes</h3>
+        </div>
+
+
+      </div>
+
+      <h1 style="margin-top: 2.5%; margin-bottom: 2%; font-size: 35px; font-weight: bold;">Veja as instituições para
+        doações mais próximas de você</h1>
+      <div id="googleMap" style="width:80%;height:400px;align-self: center; margin-bottom: 10%;"></div>
+
+      <script>
+        function myMap() {
+          var mapProp = {
+            center: new google.maps.LatLng(51.508742, -0.120850),
+            zoom: 5,
+          };
+          var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+      </script>
+
+      <script
+        src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBWiQI1YDPD6A8T7ZqolG9Z0ncUK2L8Mac&callback=myMap">
+        </script>
+
+    </div>
+    </div>
+    </div>
+  </main>
+
+
+</body>
+<script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+</html>

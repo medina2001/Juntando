@@ -1,0 +1,204 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 8px 16px 8px 16px;
+    background-color: #2AB7E8;
+    
+    overflow: hidden;
+    
+}
+.left, .right{
+    margin:0px 7px 0px 7px;
+}
+
+.right a{
+    margin: 0px 7px 0px 7px;
+    padding: 3px;
+
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    
+}
+
+.right a:hover{
+    transition: 0.3s;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    
+}
+.dropbtn {
+
+    color: white;
+    padding:15%;
+    font-size: 16px;
+    
+
+  }
+  
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top:1%
+  }
+  
+  .dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: #f1f1f1;
+    min-width: 425px;
+    right: 0;
+    text-align: center;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .show{display: block;}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    margin: 1.5%; 
+    display: flex;
+    flex-direction: column;
+
+}  
+.header h2{
+    margin-top: 1%;
+    font-size: x-large;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+} 
+.header h4{
+    margin-top:2.5%;
+    text-align: center;
+    font-size: large;
+}
+    
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    
+}
+
+
+
+.h1{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 2%;
+    
+    
+}
+
+.causa1,
+.causa2,
+.causa3,
+.causa6{
+    width: 10%;
+    padding: 1%;
+    background-color: #4DC0E8;
+    border-radius: 15px;
+    padding-top: 10px;
+    
+}
+
+.causa6{
+    padding-top: 1%;
+}
+
+.h2{
+    margin-top: 2.5%;
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    
+    
+}
+
+.causa4,
+.causa5{
+    width: 10%;
+    padding: 1.5%;
+    background-color: #4DC0E8;
+    border-radius: 15px;
+}
+
+
+#entrar{
+    margin-bottom: 5%;
+    display: flex;
+    align-self: center;
+    
+
+
+    text-decoration: none;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    color: black;
+    text-align: end;
+
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px black;
+
+    border: 1px solid #31C95A;
+    transition: 0.3s;
+}
+
+#entrar:hover{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 3.25%;
+  padding-right: 3.25%;
+    background-color: #31C95A ;
+color:white;
+    font-weight: bold;
+}
+
+
+
+  @media  screen and (max-width:720px){
+    .dropdown{
+        display: inline-block;
+    }
+
+    nav a{
+        display: none;
+        font-size: small;
+    }
+}
+
+@media  screen and (max-width:870px){
+    .h1{
+    flex-direction: column;
+    align-items: center;
+    }
+}
+

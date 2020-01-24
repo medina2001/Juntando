@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Pop-Up Doação Sucesso</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="imagens/logo-human.jpeg">
+    </head>
+    <body>
+        <div class="bg-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="imagens/Ícone.png" alt="">
+                <p style="font-size: xx-large;"><b>OBRIGADO!</b></p>
+                <p>Agradecemos por ter confirmado sua doação. Sua doação irá ajudar muitas famílias!</p>                
+                <p style="color: #40A0C2;"><b>EQUIPE HUMAN DONATION</b></p>                
+                <p style="font-size: 14px;" >Deixe seu E-mail para ser notificado quando sua doação for entregue!</p>
+                <div class="email">
+                    <input type="text" placeholder="E-mail">
+                    <button id="enviar">Enviar</button>
+                </div>
+
+            </div>
+        </div>
+        <script>
+        document.querySelector('.close').addEventListener('click',
+        function(){
+            document.querySelector('.bg-modal').style.display = 'none';
+        });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 8px 16px 8px 16px;
+    background-color: #2AB7E8;
+    
+    overflow: hidden;
+    
+}
+.left, .right{
+    margin:0px 7px 0px 7px;
+}
+
+.right a{
+    margin: 0px 7px 0px 7px;
+    padding: 3px;
+
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    
+}
+
+.right a:hover{
+    transition: 0.3s;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    
+}
+.dropbtn {
+
+    color: white;
+    padding:15%;
+    font-size: 16px;
+    
+
+  }
+  
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top:1%
+  }
+  
+  .dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: #f1f1f1;
+    min-width: 425px;
+    right: 0;
+    text-align: center;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show{display: block;}
+
+  main{
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+
+  }
+
+.cabeca{
+    display: flex;
+    flex-direction: column;
+}
+  .cabeca img{
+      margin: 2%;
+      align-self: center;
+  }
+  .cabeca h3{
+      font-weight: bold;
+      text-align: center;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 2% auto 1% 20%;
+    padding: 0;
+}
+input{
+    background-color: #2AB7E863;
+    color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 1px solid #2AB7E863;
+    border-radius: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: large;
+    padding-left: 10px;
+}
+label{
+    margin-top: 2%;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+::placeholder{
+    color: grey;
+}
+  #entrar{
+      display: flex;
+      align-self: center;
+      margin-top: 1%;
+
+
+      text-decoration: none;
+      padding-top: 0.8%;
+      padding-bottom: 0.8%;
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+
+      color: black;
+      text-align: center;
+
+      border-radius: 20px;
+      box-shadow: 2px 2px 4px black;
+
+      border: 1px solid #31C95A;
+      transition: 0.3s;
+  }
+
+  #entrar:hover{
+    padding-top: 0.9%;
+    padding-bottom: 0.9%;
+    padding-left: 2.75%;
+    padding-right: 2.75%;
+      background-color: #31C95A ;
+color:white;
+      font-weight: bold;
+  }
+
+  #esqueci{
+      display: flex;
+      align-self: center;
+      font-size: small;
+      color: grey;
+      margin: 1%;
+  }
+
+  #criarconta{
+      display: flex;
+      align-self: center;
+      text-decoration: none;
+
+      color: #2163FC;
+      font-size: medium;
+      margin-bottom: 5%;
+  }
+
+  @media  screen and (max-width:720px){
+    .dropdown{
+        display: inline-block;
+    }
+
+    nav a{
+        display: none;
+        font-size: small;
+    }
+}

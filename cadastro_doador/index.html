@@ -1,0 +1,119 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <title>Human Donation: Conectando pessoas e tranformando vidas</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../global/css/reset.css">
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/popup.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="shortcut icon" href="../global/src/logo-mini.jpeg">
+
+</head>
+
+<body>
+
+  <div class="bg-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="./src/account.png" alt="">
+      <p style="font-size: x-large;"><b>Você vai se cadastrar como:</b></p>
+      <img onclick="select1()" class="imagem1" id="img1" src="./src/volunteer.png">
+      <img onclick="select2()" class="imagem2" id="img2" src="./src/care.png">
+      <button id="Continuar" class="btn">Continuar</button>
+    </div>
+  </div>
+
+  <header>
+    <div class="left">
+      <a href="../homepage/index.html"><img src="../global/src/logo_leftside.jpg" width="40%"></a>
+
+    </div>
+
+    <div class="right">
+      <nav>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn" style="background-color:#2AB7E8;
+            border: none; width: 70px;"><i class="fa fa-bars" style="width: 5px ;color: white;"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="../instituicoes/index.html">Instituições</a>
+            <a href="../sobre_nos/index.html">Sobre nós</a>
+            <a href="../contato/index.html">Contato</a>
+            <a href="../login/index.html">Login</a>
+          </div>
+        </div>
+        <a href="../instituicoes/index.html">Instituições</a>
+        <a href="../sobre_nos/index.html">Sobre nós</a>
+        <a href="../contato/index.html">Contato</a>
+        <a href="../login/index.html">Login</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="cabeca">
+      <img src="./src/Img.png">
+      <h3> Faça o bem, dê a mão pra quem precisa de você</h3>
+    </div>
+
+    <form>
+      <label>Nome Completo</label>
+      <input type="text" placeholder="Digite seu nome aqui">
+      <label>Email</label>
+      <input type="email" placeholder="Digite seu email">
+      <label>Endereço</label>
+      <input type="password" placeholder="Digite seu Endereço">
+      <label>Senha</label>
+      <input type="password" placeholder="Digite sua senha">
+    </form>
+
+    <button id="cadastro">Criar conta</button>
+  </main>
+
+
+</body>
+
+<script>
+  document.getElementById('cadastro').addEventListener('click',
+    function () {
+      document.querySelector('.bg-modal').style.display = 'flex';
+      document.querySelector('.modal-content').style.display = 'block';
+      document.querySelector('.bg-modal').style.height = '100%';
+      ;
+    });
+</script>
+
+<script>
+  var btn1 = 0;
+  var btn2 = 0;
+  document.querySelector('.close').addEventListener('click',
+    function () {
+      document.querySelector('.bg-modal').style.display = 'none';
+    });
+  function select1() {
+    if (btn2 == 1 && btn1 == 0 || btn2 == 0 && btn1 == 0) {
+      btn2 = 0;
+      btn1 = 1;
+      document.querySelector('.imagem1').style.backgroundColor = "red";
+      document.querySelector('.imagem2').style.backgroundColor = "#31C95A";
+    }
+  };
+  function select2() {
+    if (btn1 == 1 && btn2 == 0 || btn1 == 0 && btn2 == 0) {
+      btn1 = 0;
+      btn2 = 1;
+      document.querySelector('.imagem2').style.backgroundColor = "red";
+      document.querySelector('.imagem1').style.backgroundColor = "#31C95A";
+    }
+  };
+</script>
+
+
+</html>

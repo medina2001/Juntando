@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Pop-Up Criar Conta Doador</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="shortcut icon" href="../imagens/logo-human.jpeg">
+</head>
+
+<body>
+    <div class="bg-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="../imagens/account.png" alt="">
+            <p style="font-size: x-large;"><b>Você vai se cadastrar como:</b></p>
+            <img onclick="select1()" class="imagem1" id="img1" src="../imagens/volunteer.png">
+            <img onclick="select2()" class="imagem2" id="img2" src="../imagens/care.png">
+            <button id="Continuar">Continuar</button>
+        </div>
+    </div>
+    <script>
+        var btn1 = 0;
+        var btn2 = 0;
+        document.querySelector('.close').addEventListener('click',
+            function () {
+                document.querySelector('.bg-modal').style.display = 'none';
+            });
+        function select1() {
+            if (btn2 == 1 && btn1 == 0 || btn2 == 0 && btn1 == 0) {
+                btn2 = 0;
+                btn1 = 1;
+                document.querySelector('.imagem1').style.backgroundColor = "red";
+                document.querySelector('.imagem2').style.backgroundColor = "#31C95A";
+            }
+        };
+        function select2() {
+            if (btn1 == 1 && btn2 == 0 || btn1 == 0 && btn2 == 0) {
+                btn1 = 0;
+                btn2 = 1;
+                document.querySelector('.imagem2').style.backgroundColor = "red";
+                document.querySelector('.imagem1').style.backgroundColor = "#31C95A";
+            }
+        };
+    </script>
+</body>
+
+</html>

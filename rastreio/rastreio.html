@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <title>Human Donation: Conectando pessoas e tranformando vidas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../rastreio/style/reset.css">
+    <link rel="stylesheet" href="../rastreio/style/rastreio.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="../rastreio/src/WhatsApp Image 2019-12-14 at 19.02.49.jpeg">
+   
+  </head>
+  <body>
+    <header>
+      <div class="left">
+       <a href="../homepage/homepage.html"><img src="../rastreio/src/logo_leftside.jpg" width="40%" ></a>
+
+      </div>
+
+      <div class="right">
+        <nav>
+          <div class="dropdown" >
+            <button onclick="myFunction()" class="dropbtn" style="background-color:#2AB7E8;
+            border: none; width: 50px;"><i class="fa fa-bars" style="width: 5px ;color: white; "></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="../instituicoes/instituicoes.html">Instituições</a>
+              <a href="../sobre_nós/sobre_nos.html">Sobre nós</a>
+              <a href="../contato/contato.html">Contato</a>
+              <a href="../login/login.html">Login</a>
+            </div>
+          </div>
+          <a href="../instituicoes/instituicoes.html">Instituições</a>
+          <a href="../sobre_nós/sobre_nos.html">Sobre nós</a>
+          <a href="../contato/contato.html">Contato</a>
+          <a href="../login/login.html">Login</a>
+          
+        </nav>
+      </div>
+    </header>
+
+    <main>
+        <div class="header">
+            <img src="../rastreio/src/box.png">
+            <h3>Veja onde sua doação está</h3>
+        </div>
+        <div style="margin-top: 2%; margin-left: 10%;">
+        <div class="progress">
+            <div class="p01"></div>
+        </div>
+
+        <div class="carro">
+            <img src="../rastreio/src/shipped.png" width="50%">
+        </div>
+    
+
+        <div class="status">
+            <h3>Coletando doação</h3>
+            <h3>Em trânsito</h3>
+            <h3>Entregue</h3>
+        </div>
+    </div>
+        
+        <div style="text-align: center; margin-top: 2%; margin-bottom: 2.5%;">
+        <h2 style="font-size: x-large; font-weight: bold;">Imagens para validar doações</h2>
+        <img src="../rastreio/src/picture.png" width="40%" style="border-radius: 75px;">
+        
+        </div>      
+        
+        <h2 style="font-size: xx-large; text-align:center;font-weight: bold; margin-bottom: 3%;">Veja doações anteriores</h2>
+
+        <div class="subcont" style="display: flex; flex-direction: row; justify-content: space-around; margin: 2%;">
+            <img src="../rastreio/src/picture.png" width="20%" >
+            <img src="../rastreio/src/picture.png" width="20%" >
+            <img src="../rastreio/src/picture.png" width="20%" >
+            
+        </div>
+
+        <div class="text1" style="display: flex; flex-direction: row; justify-content: space-around; margin-top: 0%; margin-bottom: 2.5%;">
+            <h4>12/08/2019</h4>
+            <h4>12/08/2019</h4>
+            <h4>12/08/2019</h4>
+
+        </div>
+        <div class="subcont" style="display: flex; flex-direction: row; justify-content: space-around; margin: 2%;">
+            <img src="../rastreio/src/picture.png" width="20%" >
+            <img src="../rastreio/src/picture.png" width="20%" >
+            <img src="../rastreio/src/picture.png" width="20%" >
+            
+        </div>
+
+        <div class="text1" style="display: flex; flex-direction: row; justify-content: space-around; margin-top: 0%; margin-bottom: 2.5%;">
+            <h4>12/08/2019</h4>
+            <h4>12/08/2019</h4>
+            <h4>12/08/2019</h4>
+
+        </div>
+
+
+
+           
+
+    </main>
+
+  </body>
+  <script>
+    function myFunction() {
+     document.getElementById("myDropdown").classList.toggle("show");
+   }
+   
+   // Close the dropdown if the user clicks outside of it
+   window.onclick = function(event) {
+     if (!event.target.matches('.dropbtn')) {
+       var dropdowns = document.getElementsByClassName("dropdown-content");
+       var i;
+       for (i = 0; i < dropdowns.length; i++) {
+         var openDropdown = dropdowns[i];
+         if (openDropdown.classList.contains('show')) {
+           openDropdown.classList.remove('show');
+         }
+       }
+     }
+   }
+    </script> 
+</html>
