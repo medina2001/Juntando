@@ -1,0 +1,27 @@
+INSTALAR PHP
+
+Para a execução da aplicação é impressintivel a instalação do PHP. 
+
+Windows:https://www.php.net/manual/en/install.windows.php
+
+MacOs: https://www.php.net/manual/en/install.macosx.php
+
+Linux: https://www.php.net/manual/en/install.unix.php
+
+Após o download do arquivo do PHP na sua máquina, extraia o arquivo na pasta onde preferir. 
+
+Após a extração, pesquise por 'Editar variáveis de ambiente' , dentro da caixa 'Variáveis de usuário para USER_NAME', encontre a variável 'Path' e aperte em 'Editar' e depois 'Novo'. Em seguida, adicione o caminho da pasta que você extraiu.
+
+INSTALADO**
+
+Observação: Para saber se o PHP foi instalado adequadamente, vá ate o Prompt de Comando e digite 'php -v', caso a instalção der certo, aparecerá a versão do PHP instalado.
+
+BAIXAR E INSTALAR XAMPP
+	Vá até o site : http://www.wampserver.com/en/# , e instale o WAMPSERVER, ele será útil para interpretar, localmente, PHP + MySQL.
+	Clique duas vezes no arquivo baixado e siga as instruções. Tudo é automático. O pacote WampServer é fornecido com os últimos lançamentos do Apache, MySQL e PHP.
+	Depois de instalar o WampServer, você pode adicionar manualmente versões adicionais do Apache, Php ou MySql (compilado apenas para VC9, VC10 e VC11). A descrição será fornecida no fórum.
+	Cada versão do Apache, MySQL e PHP tem sua própria configuração e seus próprios arquivos (datas do MySQL).
+	Use wampserver
+	O diretório "www" é criado automaticamente (geralmente c: \ wamp \ www)
+	Crie um subdiretório em "www" e coloque os arquivos PHP dentro.
+	Clique no link "localhost" no menu WampSever ou abra um navegador da Internet e vá para o URL. http: // localhost
